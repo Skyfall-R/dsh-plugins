@@ -27,7 +27,7 @@ DSH 不提供修改请求体的配置项，只提供 `llm-pi-ai/request-headers`
 
 ## 安装
 
-1. 插件页 → 添加插件，输入 `dsh-ciallo-affinity`（从 npm 安装）；或在「发现」页添加插件索引后安装。
+1. 插件页打开实验性插件「自定义插件索引」，在「发现」页添加索引 `https://raw.githubusercontent.com/Skyfall-R/dsh-plugins/main/index.json`，找到本插件安装。
 2. 把 profile 的 `cordis.patch.yml` 里 CialloAPI 路由的 `baseURL` 改成中转地址：
 
    ```yaml
