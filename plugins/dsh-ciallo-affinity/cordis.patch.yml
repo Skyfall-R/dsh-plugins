@@ -1,0 +1,12 @@
+- insert:
+    - id: ciallo-affinity
+      name: 'dsh-ciallo-affinity'
+      config:
+        # 本机中转端口；llm-pi-ai 里对应路由的 baseURL 要改成 http://127.0.0.1:<port>
+        port: 18765
+        upstream: https://cialloapi.com
+        # 要处理的 llm-pi-ai 路由名（profile 里 providers 下的键）
+        providers: [ciallo-anthropic]
+        # 可选：deviceId: my-pc（省略则用 dsh-<主机名>）
+        # root：子智能体沿用根会话的 session_id（推荐）；own：每个会话用自己的 id
+        subagents: root

@@ -1,0 +1,1 @@
+{ "meta": { "title": "CialloAPI session affinity", "description": "Sends the session id as metadata.user_id on Claude requests to CialloAPI so one session stays on one upstream account and its prompt cache." } }

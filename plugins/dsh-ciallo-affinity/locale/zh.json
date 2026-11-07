@@ -1,0 +1,1 @@
+{ "meta": { "title": "CialloAPI 会话粘性", "description": "给发往 CialloAPI 的 Claude 请求带上会话 id（metadata.user_id），让同一会话固定走同一个上游账号，避免提示缓存跨账号重写。" } }

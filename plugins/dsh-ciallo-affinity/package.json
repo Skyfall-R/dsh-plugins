@@ -1,0 +1,47 @@
+{
+    "name":  "dsh-ciallo-affinity",
+    "version":  "1.1.0",
+    "type":  "module",
+    "description":  "Pins each DeepSeek Harness session (and its subagents) to one CialloAPI upstream account by sending metadata.user_id, so the prompt cache is not rewritten across accounts.",
+    "license":  "MIT",
+    "keywords":  [
+                     "dsh",
+                     "dsh-plugin",
+                     "cialloapi",
+                     "claude",
+                     "prompt-cache"
+                 ],
+    "engines":  {
+                    "node":  "\u003e=22",
+                    "dsh":  "\u003e=0.2.2-rc.1"
+                },
+    "exports":  {
+                    ".":  "./index.js",
+                    "./locale/*.json":  "./locale/*.json",
+                    "./icon":  "./icon.svg"
+                },
+    "files":  [
+                  "index.js",
+                  "cordis.patch.yml",
+                  "locale/*.json",
+                  "icon.svg",
+                  "README.md",
+                  "CHANGELOG.md",
+                  "LICENSE"
+              ],
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           }
+            },
+    "homepage":  "https://github.com/Skyfall-R/dsh-plugins/tree/main/plugins/dsh-ciallo-affinity#readme",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/Skyfall-R/dsh-plugins.git",
+                       "directory":  "plugins/dsh-ciallo-affinity"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/Skyfall-R/dsh-plugins/issues"
+             },
+    "author":  "Skyfall"
+}
